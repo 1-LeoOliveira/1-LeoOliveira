@@ -1,4 +1,22 @@
 👋 Olá! Eu sou Leo Oliveira 🌟<br>
+
+## 💼 Portfólio (Next.js)
+
+Este repositório também é o código-fonte do meu site de portfólio, construído com
+[Next.js](https://nextjs.org), TypeScript e TailwindCSS.
+
+```bash
+npm install
+npm run dev   # http://localhost:3000
+npm run build # build de produção
+```
+
+Estrutura principal:
+- `app/` — páginas e layout (App Router)
+- `components/` — seções da página (Hero, Sobre, Destaque, Projetos, Contato)
+- `data/` — conteúdo do site e lista de projetos (`site.ts`, `projects.ts`)
+
+<br>
 <br>
 💻 Desenvolvedor Júnior iniciando no mundo da programação, mas já tenho conhecimento em:<br>
 <br>
