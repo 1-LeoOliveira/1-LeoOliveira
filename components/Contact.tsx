@@ -10,7 +10,7 @@ export default function Contact() {
           Vamos conversar sobre o seu próximo projeto?
         </h3>
         <p className="mx-auto mt-4 max-w-xl text-foreground/70">
-          Estou em busca de oportunidades como desenvolvedor júnior e aberto a
+          Estou aberto a novas oportunidades como Desenvolvedor Full Stack e a
           projetos freelance. Manda uma mensagem.
         </p>
         <a
@@ -19,6 +19,9 @@ export default function Contact() {
         >
           {site.email}
         </a>
+        <p className="mt-4 text-sm text-foreground/60">
+          {site.phone} · {site.location}
+        </p>
         <SocialLinks className="mt-8 justify-center" />
       </div>
     </section>
