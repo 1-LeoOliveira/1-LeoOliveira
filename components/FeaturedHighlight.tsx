@@ -5,18 +5,17 @@ export default function FeaturedHighlight() {
     <section id="destaque" className="border-y border-black/5 bg-black/[.02] dark:border-white/10 dark:bg-white/[.03]">
       <div className="mx-auto max-w-5xl px-6 py-20">
         <h2 className="text-sm font-mono text-accent">Em destaque</h2>
-        <h3 className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">
-          Flight Manager &amp; FM Pilot
-        </h3>
+        <h3 className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">Aero Star</h3>
         <p className="mt-4 max-w-3xl leading-relaxed text-foreground/70">
-          Um dos projetos mais completos que desenvolvi foi pensar em dois sistemas
-          conectados para operação de voos, cada um resolvendo um problema diferente:
-          o <strong>Flight Manager</strong> centraliza a gestão — aeronaves, tripulação,
-          escalas e manutenção — enquanto o <strong>FM Pilot</strong> leva essa mesma
-          base de dados para quem está em campo, com acesso rápido ao plano de voo e à
-          escala do dia. Construir os dois juntos significou desenhar uma API e um
-          modelo de dados únicos capazes de atender tanto o painel administrativo
-          quanto a aplicação do piloto, mantendo as informações sempre em sincronia.
+          O projeto mais completo que desenvolvi: uma plataforma de atendimento e
+          operação para um terminal de aviação executiva, cobrindo o fluxo inteiro —
+          da chegada da aeronave no pátio até o faturamento mensal do cliente. O
+          sistema tem painéis dedicados para cada papel da operação (recepção,
+          coordenação, rampa, financeiro e administração) e, do lado do piloto, um
+          dashboard próprio com assinatura digital das inspeções. Construir os dois
+          lados juntos significou desenhar uma API e um modelo de dados únicos,
+          rodando em Cloudflare Workers com banco D1, capazes de atender tanto os
+          painéis internos quanto o app do piloto em tempo real.
         </p>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2">

@@ -9,27 +9,27 @@ export type Project = {
   status?: string;
 };
 
-// Os dois sistemas em destaque na home. Textos em modo rascunho —
-// ajuste com os detalhes reais (link do repositório, prints, métricas)
-// assim que tiver os repositórios do Flight Manager / FM Pilot à mão.
+// Aero Star: sistema de atendimento e operação para um terminal de aviação
+// executiva (FBO). É o mesmo projeto referido anteriormente como
+// "Flight Manager" (painéis operacionais) e "FM Pilot" (app do piloto).
 export const featuredSystems: Project[] = [
   {
-    slug: "flight-manager",
-    name: "Flight Manager",
-    tagline: "Painel de gestão de operações de voo",
+    slug: "aero-star-operacional",
+    name: "Aero Star — Painéis Operacionais",
+    tagline: "Recepção, rampa, coordenação, financeiro e administração",
     description:
-      "Sistema web para centralizar a operação de voos: cadastro de aeronaves e tripulação, montagem de escalas, acompanhamento de manutenção e relatórios operacionais em um único painel para quem administra a operação.",
-    stack: ["Next.js", "TypeScript", "Node.js", "PostgreSQL"],
-    status: "Em desenvolvimento",
+      "Cada função do terminal tem seu próprio painel: a recepção registra a chegada da aeronave, coordenação e gerência de rampa organizam os serviços solicitados, o financeiro cuida de cobranças e assinaturas mensais por aeronave, e a administração gerencia usuários, aeronaves e permissões. Um painel de TV exibe o status das aeronaves no pátio em tempo real.",
+    stack: ["React", "TypeScript", "Cloudflare Workers", "Hono", "D1", "R2"],
+    status: "Sistema em produção",
   },
   {
-    slug: "fm-pilot",
-    name: "FM Pilot",
-    tagline: "Aplicação complementar para o piloto",
+    slug: "aero-star-pilot",
+    name: "Aero Star — App do Piloto",
+    tagline: "Dashboard e assinatura digital de inspeção",
     description:
-      "Aplicação irmã do Flight Manager, pensada para o dia a dia de quem está em campo: acesso rápido ao plano de voo, checklists e status da escala, consumindo a mesma base de dados da operação em tempo real.",
-    stack: ["Next.js", "TypeScript", "API REST"],
-    status: "Em desenvolvimento",
+      "Cada piloto tem seu próprio dashboard para acompanhar a aeronave e assinar digitalmente o checklist de inspeção direto do celular ou tablet — a assinatura e os dados da inspeção são exportados automaticamente em PDF.",
+    stack: ["React", "TypeScript", "react-signature-canvas", "jsPDF"],
+    status: "Sistema em produção",
   },
 ];
 
