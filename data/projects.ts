@@ -7,6 +7,7 @@ export type Project = {
   repo?: string;
   link?: string;
   status?: string;
+  image?: string;
 };
 
 // Aero Star: sistema de atendimento e operação para um terminal de aviação
@@ -21,6 +22,7 @@ export const featuredSystems: Project[] = [
       "Cada função do terminal tem seu próprio painel: a recepção registra a chegada da aeronave, coordenação e gerência de rampa organizam os serviços solicitados, o financeiro cuida de cobranças e assinaturas mensais por aeronave, e a administração gerencia usuários, aeronaves e permissões. Um painel de TV exibe o status das aeronaves no pátio em tempo real.",
     stack: ["React", "TypeScript", "Cloudflare Workers", "Hono", "D1", "R2"],
     status: "Sistema em produção",
+    image: "/images/aero-star-ops.png",
   },
   {
     slug: "aero-star-pilot",
@@ -30,6 +32,7 @@ export const featuredSystems: Project[] = [
       "Cada piloto tem seu próprio dashboard para acompanhar a aeronave e assinar digitalmente o checklist de inspeção direto do celular ou tablet — a assinatura e os dados da inspeção são exportados automaticamente em PDF.",
     stack: ["React", "TypeScript", "react-signature-canvas", "jsPDF"],
     status: "Sistema em produção",
+    image: "/images/aero-star-pilot.png",
   },
 ];
 

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { featuredSystems } from "@/data/projects";
 
 export default function FeaturedHighlight() {
@@ -22,30 +23,43 @@ export default function FeaturedHighlight() {
           {featuredSystems.map((project) => (
             <div
               key={project.slug}
-              className="rounded-2xl border border-black/10 bg-background p-6 dark:border-white/10"
+              className="overflow-hidden rounded-2xl border border-black/10 bg-background dark:border-white/10"
             >
-              <div className="flex items-center justify-between gap-3">
-                <h4 className="text-lg font-semibold">{project.name}</h4>
-                {project.status && (
-                  <span className="rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
-                    {project.status}
-                  </span>
-                )}
+              {project.image && (
+                <div className="relative aspect-[3/2] w-full bg-[#0d1526]">
+                  <Image
+                    src={project.image}
+                    alt={`Mockup ilustrativo — ${project.name}`}
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 640px) 50vw, 100vw"
+                  />
+                </div>
+              )}
+              <div className="p-6">
+                <div className="flex items-center justify-between gap-3">
+                  <h4 className="text-lg font-semibold">{project.name}</h4>
+                  {project.status && (
+                    <span className="rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
+                      {project.status}
+                    </span>
+                  )}
+                </div>
+                <p className="mt-1 text-sm font-medium text-foreground/60">{project.tagline}</p>
+                <p className="mt-4 text-sm leading-relaxed text-foreground/70">
+                  {project.description}
+                </p>
+                <ul className="mt-5 flex flex-wrap gap-2">
+                  {project.stack.map((tech) => (
+                    <li
+                      key={tech}
+                      className="rounded-full border border-black/10 px-3 py-1 text-xs text-foreground/70 dark:border-white/15"
+                    >
+                      {tech}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <p className="mt-1 text-sm font-medium text-foreground/60">{project.tagline}</p>
-              <p className="mt-4 text-sm leading-relaxed text-foreground/70">
-                {project.description}
-              </p>
-              <ul className="mt-5 flex flex-wrap gap-2">
-                {project.stack.map((tech) => (
-                  <li
-                    key={tech}
-                    className="rounded-full border border-black/10 px-3 py-1 text-xs text-foreground/70 dark:border-white/15"
-                  >
-                    {tech}
-                  </li>
-                ))}
-              </ul>
             </div>
           ))}
         </div>
