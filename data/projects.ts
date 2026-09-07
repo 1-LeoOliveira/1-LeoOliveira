@@ -16,6 +16,7 @@ export type FeaturedGroup = {
   tagline: string;
   description: string;
   link?: string;
+  image?: string;
   cards: Project[];
 };
 
@@ -29,6 +30,7 @@ export const featuredSystems: FeaturedGroup[] = [
     description:
       "Sistema em produção que digitaliza toda a operação de atendimento em solo (ground handling) da Aero Star Táxi Aéreo: do agendamento de chegada e partida ao faturamento, passando por check-in de passageiros e bagagem, inspeção da aeronave e assinatura digital da ficha de atendimento. Cada perfil da equipe — recepção, operações, coordenação, gerência de rampa, financeiro, administração e o próprio piloto — usa um painel dedicado à sua função, com notificações internas e um painel de TV no saguão mostrando os próximos voos em tempo real.",
     link: "https://aerostaratendimento.com",
+    image: "/images/aero-star-real.png",
     cards: [
       {
         slug: "aero-star-operacional",
@@ -38,7 +40,6 @@ export const featuredSystems: FeaturedGroup[] = [
           "Abertura e acompanhamento de atendimentos (chegada, partida, serviços avulsos, comissária) até a emissão da Ficha de Atendimento em PDF, cadastro de clientes/aeronaves/funcionários com tabela de preços e mensalistas, controle financeiro completo (receitas, despesas, contas a pagar/receber, ticket médio) e dashboards com indicadores reais por perfil.",
         stack: ["React", "TypeScript", "Cloudflare Workers", "Hono", "D1", "R2"],
         status: "Em produção",
-        image: "/images/aero-star-ops.png",
       },
       {
         slug: "aero-star-pilot",
@@ -48,7 +49,6 @@ export const featuredSystems: FeaturedGroup[] = [
           "O piloto acompanha seus próprios atendimentos e registra a inspeção da aeronave — avarias com fotos e assinatura digital do responsável, direto do celular. O relatório é exportado automaticamente em PDF.",
         stack: ["React", "TypeScript", "jsPDF", "Cloudflare R2"],
         status: "Em produção",
-        image: "/images/aero-star-pilot.png",
       },
     ],
   },
@@ -66,7 +66,7 @@ export const featuredSystems: FeaturedGroup[] = [
         description:
           "Cadastro completo da frota com documentos e habilitações da tripulação (com alerta de vencimento), abertura de missões com voos, tripulação e passageiros, agenda de reservas com bloqueio automático de sobreposição, rateio automático de despesas entre sócios da aeronave, borderôs, despesas fixas recorrentes e relatórios exportáveis em PDF/Excel. Login via Google OAuth com fila de aprovação e quatro níveis de permissão.",
         stack: ["React", "TypeScript", "Cloudflare Workers", "Hono", "D1 (multi-tenant)", "R2"],
-        image: "/images/flight-manager-fleet.png",
+        image: "/images/flight-manager-real.png",
         link: "https://flight-manager.com",
       },
       {
@@ -76,7 +76,7 @@ export const featuredSystems: FeaturedGroup[] = [
         description:
           "App independente de empresa para o piloto proprietário controlar despesas, voos e saldo de horas de manutenção da própria aeronave, com relatórios por categoria, convite de sócios da aeronave, assinatura mensal/anual via Stripe com teste grátis, e conquistas (XP e patentes) conforme o uso.",
         stack: ["React", "TypeScript", "Stripe", "Cloudflare Workers", "D1"],
-        image: "/images/fm-pilot-app.png",
+        image: "/images/fm-pilot-real.png",
         link: "https://flightmanagerpilot.com",
       },
     ],

@@ -31,6 +31,18 @@ export default function FeaturedHighlight() {
                 {group.description}
               </p>
 
+              {group.image && (
+                <div className="relative mt-8 aspect-[3/2] w-full overflow-hidden rounded-2xl border border-black/10 bg-[#0d1526] dark:border-white/10 sm:aspect-[2/1]">
+                  <Image
+                    src={group.image}
+                    alt={`Captura de tela — ${group.name}`}
+                    fill
+                    className="object-cover"
+                    sizes="100vw"
+                  />
+                </div>
+              )}
+
               <div className="mt-8 grid gap-6 sm:grid-cols-2">
                 {group.cards.map((project) => (
                   <div
@@ -38,10 +50,10 @@ export default function FeaturedHighlight() {
                     className="overflow-hidden rounded-2xl border border-black/10 bg-background dark:border-white/10"
                   >
                     {project.image && (
-                      <div className="relative aspect-[3/2] w-full bg-[#0d1526]">
+                      <div className="relative aspect-video w-full bg-[#0d1526]">
                         <Image
                           src={project.image}
-                          alt={`Mockup ilustrativo — ${project.name}`}
+                          alt={`Captura de tela — ${project.name}`}
                           fill
                           className="object-cover"
                           sizes="(min-width: 640px) 50vw, 100vw"
