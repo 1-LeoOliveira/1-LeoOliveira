@@ -50,7 +50,7 @@ export default function FeaturedHighlight() {
                     className="overflow-hidden rounded-2xl border border-black/10 bg-background dark:border-white/10"
                   >
                     {project.image && (
-                      <div className="relative aspect-video w-full bg-[#0d1526]">
+                      <div className="relative aspect-[2/1] w-full bg-[#0d1526]">
                         <Image
                           src={project.image}
                           alt={`Captura de tela — ${project.name}`}
