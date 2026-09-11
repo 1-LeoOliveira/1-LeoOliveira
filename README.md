@@ -1,9 +1,49 @@
-👋 Olá! Eu sou Leo Oliveira 🌟<br>
+### Olá, eu sou Leonardo Oliveira 👋
 
-## 💼 Portfólio (Next.js)
+Desenvolvedor Full Stack atuando em TI desde 2016, especializado em **React**, **Next.js**, **TypeScript** e **Node.js** — do levantamento de requisitos ao sistema em produção. Também trabalho com Python, administração de bancos de dados e Cloudflare Workers.
 
-Este repositório também é o código-fonte do meu site de portfólio, construído com
-[Next.js](https://nextjs.org), TypeScript e TailwindCSS.
+- 💼 Aberto a novas oportunidades como Desenvolvedor Full Stack e a projetos freelance
+- 🎓 Pós-graduação em Administração de Banco de Dados em andamento
+- 📍 Florianópolis, SC
+
+## 🛠 Stack
+
+**Front-end** · React.js, Next.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, TailwindCSS
+**Back-end** · Node.js, Python, Django, Hono, APIs REST
+**Banco de dados** · PostgreSQL, MySQL, MongoDB, Cloudflare D1
+**Infra e ferramentas** · Docker, Git, Cloudflare Workers/R2, Vercel
+**Metodologias** · Scrum, Kanban
+
+## 🚀 Projetos em destaque
+
+**[Aero Star](https://aerostaratendimento.com)** — sistema em produção que digitaliza toda a operação de atendimento em solo (*ground handling*) da Aero Star Táxi Aéreo: agendamento de chegada/partida, check-in, inspeção da aeronave com assinatura digital e faturamento, com painéis dedicados por perfil (recepção, operações, coordenação, rampa, financeiro, admin e piloto).
+`React` `TypeScript` `Cloudflare Workers` `Hono` `D1` `R2`
+
+**[FlightManager](https://flight-manager.com) & [FM Pilot](https://flightmanagerpilot.com)** — plataforma com dois produtos: o FlightManager gerencia frota, missões, tripulação e financeiro para empresas de aviação executiva (multi-empresa, banco isolado por cliente); o FM Pilot é um app independente para pilotos proprietários controlarem despesas, voos e manutenção da própria aeronave, com assinatura via Stripe.
+`React` `TypeScript` `Cloudflare Workers` `D1` `Stripe`
+
+**[FollowTrack](https://github.com/1-LeoOliveira/FollowTrack)** — API + dashboard que monitora a evolução de seguidores de perfis, com histórico, comparação entre perfis e exportação em CSV.
+`Node.js` `TypeScript` `Prisma` `PostgreSQL`
+
+**[Sistema de Pedidos](https://github.com/1-LeoOliveira/app)** — cardápio digital com carrinho e checkout direto via WhatsApp para restaurantes e lanchonetes.
+`Next.js` `TypeScript` `Supabase`
+
+👉 Veja todos os projetos e o restante da experiência profissional no meu **[portfólio completo](https://github.com/1-LeoOliveira/Portifolio)**.
+
+## 📫 Contato
+
+<div>
+  <a href="mailto:leoo2771@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white"></a>
+  <a href="https://www.linkedin.com/in/leonardo-oliveira-54969417b" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <a href="https://www.instagram.com/01_LeoOliveira/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
+  <a href="https://discord.gg/Zr2Td5Sk" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"></a>
+</div>
+
+---
+
+## 💻 Sobre este repositório
+
+Este repositório também é o código-fonte do meu site de portfólio, construído com [Next.js](https://nextjs.org), TypeScript e TailwindCSS (o mesmo código está espelhado em [`1-LeoOliveira/Portifolio`](https://github.com/1-LeoOliveira/Portifolio)).
 
 ```bash
 npm install
@@ -13,51 +53,5 @@ npm run build # build de produção
 
 Estrutura principal:
 - `app/` — páginas e layout (App Router)
-- `components/` — seções da página (Hero, Sobre, Destaque, Projetos, Contato)
-- `data/` — conteúdo do site e lista de projetos (`site.ts`, `projects.ts`)
-
-<br>
-<br>
-💻 Desenvolvedor Júnior iniciando no mundo da programação, mas já tenho conhecimento em:<br>
-<br>
-
-Python: Desenvolvimento de scripts, automações e projetos web com Django/Flask.<br>
-JavaScript: Criação de interfaces dinâmicas e interativas.<br>
-HTML & CSS: Estruturação e estilização de páginas web responsivas.<br>
-<br>
-🌱 Estou atualmente estudando:<br>
-<br>
-
-Node.js: Explorando o desenvolvimento de aplicações backend com JavaScript.<br>
-Data Science: Aprendendo sobre análise de dados, machine learning e visualização de dados.<br>
-<br>
-🎓 Em busca de oportunidades para me aprimorar como desenvolvedor e contribuir em projetos inovadores.<br>
-<br>
-💼 Interessado em vagas de Desenvolvedor Júnior, onde posso aplicar minhas habilidades e aprender com uma equipe colaborativa.<br>
-<br>
-📚 Além de programar, gosto de aprender sobre novas tecnologias e boas práticas de desenvolvimento.<br>
-<br>
-🚀 Projetos recentes:<br>
-<br>
-
-Projeto 1: .<br>
-Projeto 2: .<br>
-<br>
-📫 Você pode me encontrar em:<br>
-<div> 
-  <a href="https://www.instagram.com/01_LeoOliveira/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
- <a href="https://discord.gg/Zr2Td5Sk" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank"></a> 
-  <a href = "mailto:leoo2771@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/leonardo-oliveira-54969417b" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-  
-</div>
-
-
-<div style="display: inline_block"><br>
-  <img align="center" alt="Rafa-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-  <img align="center" alt="Rafa-Ts" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
-  <img align="center" alt="Rafa-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img align="center" alt="Rafa-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <img align="center" alt="Rafa-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-  <img align="center" alt="Rafa-Csharp" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
-</div>
+- `components/` — seções da página (Hero, Sobre, Experiência, Destaque, Projetos, Contato)
+- `data/` — conteúdo do site e lista de projetos (`site.ts`, `projects.ts`, `experience.ts`)
